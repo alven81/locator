@@ -1,0 +1,41 @@
+.main_locator {
+    display: flex;
+    gap: 20px;
+    height: 90vh;
+    &-info {
+        width: 100%;
+        margin: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: stretch;
+        div {
+            flex-grow: 1;
+            gap: 10px;
+            height: 40vh;
+        }
+        &-location {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-search {
+            display: flex;
+            justify-content: space-between;
+            input {
+                box-sizing: border-box;
+                padding: 5;
+                height: 40px;
+                width: 50%;
+            }
+            button {
+                box-sizing: border-box;
+                padding: 0;
+                height: 40px;
+                width: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}
