@@ -38,3 +38,44 @@ const data =
 
 
 export { data }
+
+const first =
+
+    {
+        "ip": "170.170.160.20",
+        "type": "ipv4",
+        "continent_code": "EU",
+        "continent_name": "Europe",
+        "country_code": "BY",
+        "country_name": "Belarus",
+        "region_code": "HM",
+        "region_name": "Minsk City",
+        "city": "San Francisco",
+        "zip": "200400",
+        "latitude": 37.77,
+        "longitude": -122.43,
+        "location": {
+            "geoname_id": 625144,
+            "capital": "San Francisco",
+            "languages": [
+                {
+                    "code": "be",
+                    "name": "Belarusian",
+                    "native": "Беларуская"
+                },
+                {
+                    "code": "ru",
+                    "name": "Russian",
+                    "native": "Русский"
+                }
+            ],
+            "country_flag": "https://assets.ipstack.com/flags/by.svg",
+            "country_flag_emoji": "🇧🇾",
+            "country_flag_emoji_unicode": "U+1F1E7 U+1F1FE",
+            "calling_code": "375",
+            "is_eu": false
+        }
+    }
+
+
+export { first }

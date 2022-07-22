@@ -1,11 +1,14 @@
 const List = ({infoList}) => {
-    console.log(infoList.length);
+    console.log("listInfo", infoList);
     return (
         <div className="container main_list">
              {
-                infoList.length > 0 ? infoList.map((item) => (   
-                    <p>{item.ip}</p>
-                )) :  <p>Loading</p> 
+                infoList.length > 0 ? infoList.map((item, index) => (   
+                    <div key={index}>
+                        <p>{item.ip}</p>
+                    </div>
+                   
+                )) :  <p>Waiting...</p> 
             }
         </div>
     );
