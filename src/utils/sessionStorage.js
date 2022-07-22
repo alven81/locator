@@ -1,11 +1,11 @@
 const saveToStorage = (data) => {
-    sessionStorage.setItem('locate', JSON.stringify(data));
-}
+    sessionStorage.setItem("locate", JSON.stringify(data));
+};
 
-export { saveToStorage }
+export { saveToStorage };
 
 const readFromStorage = (data) => {
-    return JSON.parse(sessionStorage.getItem('locate'))
-}
+    return JSON.parse(sessionStorage.getItem("locate"));
+};
 
-export { readFromStorage }
+export { readFromStorage };
