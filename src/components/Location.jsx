@@ -18,7 +18,7 @@ const Location = ({ infoList }) => {
                             <p>Country: {infoList.country_name}</p>
                             <p>The capital: {infoList.location.capital}</p>
                             <p>Phone code: {infoList.location.calling_code}</p>
-                            <p>{infoList.location.geoname_id}</p>
+                            <p>IP: {infoList.ip}</p>
                         </div>
                     ) : (
                         <p>Loading...</p>

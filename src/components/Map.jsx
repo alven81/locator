@@ -11,14 +11,15 @@ const Map = ({ infoUser }) => {
         <>
             <GoogleMap
                 zoom={15}
-                center={{lat: infoUser.latitude, lng: infoUser.longitude}}
-
-                //mapContainerClassName="map-container"
+                center={{ lat: infoUser.latitude, lng: infoUser.longitude }}
+                draggable={true}
             >
-                <Marker 
-                    position={{lat: infoUser.latitude, lng: infoUser.longitude}}
-
-                    //draggable={true}
+                <Marker
+                    position={{
+                        lat: infoUser.latitude,
+                        lng: infoUser.longitude,
+                    }}
+                    text={infoUser.ip}
                 />
             </GoogleMap>
         </>
