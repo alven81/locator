@@ -32,7 +32,7 @@ const Main = () => {
 
     const request = (inputText) => {
         axios
-            .get(`https://api.ipstack.com/${inputText}?access_key=${access_key}`)
+            .get(`http://api.ipstack.com/${inputText}?access_key=${access_key}`)
             .then(function (response) {
                 console.log("response", response.data);
                 if (response) buildListData(response.data);
